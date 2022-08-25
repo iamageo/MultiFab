@@ -3,13 +3,19 @@ package com.iamageo.multifablibrary
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.contentColorFor
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.Immutable
+import androidx.compose.runtime.Stable
 import androidx.compose.ui.graphics.Color
 
+@Immutable
 interface FabOption {
+    @Stable
     val iconTint: Color
 
+    @Stable
     val backgroundTint: Color
 
+    @Stable
     val showLabels: Boolean
 }
 

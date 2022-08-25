@@ -27,7 +27,7 @@ fun MiniFabItem(
             Text(
                 item.label,
                 fontSize = 12.sp,
-                color = item.labelcolor,
+                color = item.labelColor,
                 modifier = Modifier
                     .padding(start = 6.dp, end = 6.dp, top = 4.dp, bottom = 4.dp)
             )

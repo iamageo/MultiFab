@@ -19,7 +19,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.iamageo.multifablibrary.*
 
 @OptIn(ExperimentalAnimationApi::class)
 @Composable
@@ -35,7 +34,7 @@ fun MultiFloatingActionButton(
     stateChanged: (fabState: MultiFabState) -> Unit = {}
 ) {
     val rotation by animateFloatAsState(
-        if (fabState.value == MultiFabState.Expand) fabIcon.iconRotate ?: 0f else 0f
+        if (fabState.value == MultiFabState.Expanded) fabIcon.iconRotate ?: 0f else 0f
     )
 
     Column(
@@ -43,7 +42,7 @@ fun MultiFloatingActionButton(
         horizontalAlignment = Alignment.End,
     ) {
         AnimatedVisibility(
-            visible = fabState.value == MultiFabState.Expand,
+            visible = fabState.value == MultiFabState.Expanded,
             enter = fadeIn() + expandVertically(),
             exit = fadeOut()
         ) {
