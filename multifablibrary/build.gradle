@@ -43,7 +43,7 @@ afterEvaluate {
             release(MavenPublication) {
                 from components.release
                 groupId = 'com.github.iamageo'
-                artifactId = 'multifab'
+                artifactId = 'multifablibrary'
                 version = '1.0.0'
             }
         }
