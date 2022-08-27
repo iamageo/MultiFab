@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'maven-publish'
 }
 
 android {
@@ -30,6 +31,22 @@ android {
 
     buildFeatures {
         compose true
+    }
+}
+
+group = 'com.github.iamageo'
+version = '1.0.0'
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.iamageo'
+                artifactId = 'multifab'
+                version = '1.0.0'
+            }
+        }
     }
 }
 
