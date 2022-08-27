@@ -2,7 +2,8 @@
 <p align="center"> 
 ➕ An efficient and beaufitul Multi Float action button library based on Twitter implemented in Jetpack Compose 🚀
 </p>
-<br/>
+
+![banner_multifab](https://user-images.githubusercontent.com/26925002/187031958-a2aa51a4-9aee-4f6a-9066-644ddb91862c.png)
 
 <p align="center">
   <a href="https://opensource.org/licenses/Apache-2.0"><img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"/></a>
@@ -14,8 +15,6 @@
 
 
 </p>
-
-## Anatomy
 
 ## Including in your project
 
