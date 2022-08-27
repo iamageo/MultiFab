@@ -17,7 +17,7 @@
 </p>
 
 ## Including in your project
-
+[![](https://jitpack.io/v/iamageo/MultiFab.svg)](https://jitpack.io/#iamageo/MultiFab)
 
 ### Gradle
 Add below codes to your **root** `build.gradle` file (not your module build.gradle file).
@@ -32,7 +32,7 @@ allprojects {
 And add a dependency code to your **module**'s `build.gradle` file.
 ```gradle
 dependencies {
-       
+  implementation 'com.github.iamageo:MultiFab:{multifab-version}'
 }
 ```
 
