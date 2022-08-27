@@ -34,12 +34,12 @@ class MainActivity : ComponentActivity() {
                                 MultiFabItem(
                                     icon = R.drawable.ic_baseline_add_24,
                                     label = "first",
-                                    labelcolor = Color.White
+                                    labelColor = Color.White
                                 ),
                                 MultiFabItem(
                                     icon = R.drawable.ic_baseline_add_24,
                                     label = "second",
-                                    labelcolor = Color.White
+                                    labelColor = Color.White
                                 ),
                             ),
                             onFabItemClicked = { println(it) },
