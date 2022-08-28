@@ -37,7 +37,7 @@ dependencies {
 ```
 
 ## Anatomy
-![anatomy](https://user-images.githubusercontent.com/26925002/187082727-62661792-7d59-41b2-8a83-32ce4b99e719.png)
+![anatomy](https://user-images.githubusercontent.com/26925002/187083144-b87a3b3e-7eb0-4356-86b8-2ab8f80000bf.png)
 
 > 1 - MultiFloatActionButton
   - FabIcon
