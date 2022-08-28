@@ -36,6 +36,19 @@ dependencies {
 }
 ```
 
+## Anatomy
+![anatomy](https://user-images.githubusercontent.com/26925002/187082727-62661792-7d59-41b2-8a83-32ce4b99e719.png)
+
+> 1 - MultiFloatActionButton
+  - FabIcon
+  - FabOption
+  - itemsMultiFab
+  - onFabItemClicked
+  - FabTitle
+  - ShowFabTitle
+  
+> 2 - MultiFabItem
+
 ## Basic Usage
 Add in you Activity file.
 
