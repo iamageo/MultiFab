@@ -84,6 +84,8 @@ MultiFloatingActionButton(
 ## Preview
 ![multifab](https://user-images.githubusercontent.com/26925002/187035337-b9f654b6-7e90-4395-bada-5c22aa681692.gif)
 
+## Hacktoberfest 2022
+This project has been submitted for hacktoberfest 2022. [See more here](https://hacktoberfest.com/)
 
 ## License
 ```
