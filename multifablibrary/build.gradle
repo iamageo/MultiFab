@@ -35,7 +35,7 @@ android {
 }
 
 group = 'com.github.iamageo'
-version = '1.0.2'
+version = '1.0.5'
 
 afterEvaluate {
     publishing {
@@ -44,7 +44,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.iamageo'
                 artifactId = 'MultiFab'
-                version = '1.0.2'
+                version = '1.0.5'
             }
         }
     }
