@@ -36,12 +36,56 @@ dependencies {
 }
 ```
 
+## Anatomy
+![anatomy](https://user-images.githubusercontent.com/26925002/187083144-b87a3b3e-7eb0-4356-86b8-2ab8f80000bf.png)
+
+> 1 - MultiFloatActionButton
+  - FabIcon
+  - FabOption
+  - itemsMultiFab
+  - onFabItemClicked
+  - FabTitle
+  - ShowFabTitle
+  
+> 2 - MultiFabItem
+
 ## Basic Usage
 Add in you Activity file.
 
 ```kotlin
-
+MultiFloatingActionButton(
+    fabIcon = FabIcon(
+        iconRes = R.drawable.ic_baseline_add_24,
+        iconResAfterRotate = R.drawable.ic_baseline_remove_24,
+        iconRotate = 180f
+    ),
+    fabOption = FabOption(
+        iconTint = Color.White,
+        showLabels = true,
+        backgroundTint = Color.Blue,
+    ),
+    itemsMultiFab = listOf(
+        MultiFabItem(
+            icon = R.drawable.ic_baseline_add_24,
+            label = "first",
+            labelColor = Color.White
+        ),
+        MultiFabItem(
+            icon = R.drawable.ic_baseline_add_24,
+            label = "second",
+            labelColor = Color.White
+        ),
+    ),
+    onFabItemClicked = { println(it) },
+    fabTitle = "MultiFloatActionButton",
+    showFabTitle = false
+ )
 ```
+## Preview
+![multifab](https://user-images.githubusercontent.com/26925002/187035337-b9f654b6-7e90-4395-bada-5c22aa681692.gif)
+
+## Hacktoberfest 2022
+This project has been submitted for hacktoberfest 2022. [See more here](https://hacktoberfest.com/)
 
 ## License
 ```
