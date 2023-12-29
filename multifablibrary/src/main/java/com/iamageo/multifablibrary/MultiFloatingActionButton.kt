@@ -15,12 +15,10 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.rotate
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
-@OptIn(ExperimentalAnimationApi::class)
 @Composable
 fun MultiFloatingActionButton(
     fabIcon: FabIcon,
@@ -30,6 +28,7 @@ fun MultiFloatingActionButton(
     itemsMultiFab: List<MultiFabItem>,
     fabState: MutableState<MultiFabState> = rememberMultiFabState(),
     fabOption: FabOption = FabOption(),
+    miniFabOption: FabOption = fabOption,
     onFabItemClicked: (fabItem: MultiFabItem) -> Unit,
     stateChanged: (fabState: MultiFabState) -> Unit = {}
 ) {
@@ -55,8 +54,9 @@ fun MultiFloatingActionButton(
                 itemsIndexed(itemsMultiFab) { _, item ->
                     MiniFabItem(
                         item = item,
-                        showLabel = fabOption.showLabels,
-                        miniFabColor = Color.Blue,
+                        showLabel = miniFabOption.showLabels,
+                        miniFabColor = miniFabOption.iconTint,
+                        miniFabBackgroundColor = miniFabOption.backgroundTint,
                         onFabItemClicked = { onFabItemClicked(item) })
                 }
 

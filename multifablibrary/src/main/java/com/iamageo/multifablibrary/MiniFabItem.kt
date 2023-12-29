@@ -17,6 +17,7 @@ fun MiniFabItem(
     item: MultiFabItem,
     showLabel: Boolean,
     miniFabColor: Color,
+    miniFabBackgroundColor: Color,
     onFabItemClicked: (item: MultiFabItem) -> Unit
 ) {
     Row(
@@ -36,7 +37,7 @@ fun MiniFabItem(
         FloatingActionButton(
             modifier = Modifier.size(40.dp),
             onClick = { onFabItemClicked(item) },
-            backgroundColor = Color.White
+            backgroundColor = miniFabBackgroundColor
         ) {
             Icon(
                 painter = painterResource(item.icon),
