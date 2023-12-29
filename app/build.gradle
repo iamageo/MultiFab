@@ -55,5 +55,5 @@ dependencies {
     implementation 'androidx.activity:activity-compose:1.6.1'
 
     implementation project(path: ":multifablibrary")
-    //implementation 'com.github.iamageo:MultiFab:1.0.5'
+    //implementation 'com.github.iamageo:MultiFab:1.0.7'
 }
