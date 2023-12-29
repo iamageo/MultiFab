@@ -3,7 +3,11 @@ package com.iamageo.multifab
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Scaffold
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import com.iamageo.multifab.ui.theme.MultiFabTheme
 import com.iamageo.multifablibrary.FabIcon
@@ -26,9 +30,9 @@ class MainActivity : ComponentActivity() {
                                 iconRotate = 180f
                             ),
                             fabOption = FabOption(
-                                iconTint = Color.White,
+                                iconTint = Color.Blue,
                                 showLabels = true,
-                                backgroundTint = Color.Blue,
+                                backgroundTint = Color.White,
                             ),
                             itemsMultiFab = listOf(
                                 MultiFabItem(
@@ -47,7 +51,9 @@ class MainActivity : ComponentActivity() {
                             showFabTitle = false
                         )
                     }
-                ) {
+                ) { paddingValues ->
+                    Column(modifier = Modifier
+                        .fillMaxSize().padding(paddingValues),) {}
                 }
             }
         }
