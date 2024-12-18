@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.iamageo.multifab'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.iamageo.multifab"
         minSdk 21
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
