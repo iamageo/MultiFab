@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.iamageo.multifab'
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         applicationId "com.iamageo.multifab"
         minSdk 21
-        targetSdk 34
+        targetSdk 35
         versionCode 1
         versionName "1.0"
 
@@ -49,12 +49,12 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.core:core-ktx:1.15.0'
     implementation "androidx.compose.ui:ui:$compose_version"
     implementation "androidx.compose.material:material:$compose_version"
     implementation "androidx.compose.ui:ui-tooling-preview:$compose_version"
-    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
-    implementation 'androidx.activity:activity-compose:1.6.1'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.8.7'
+    implementation 'androidx.activity:activity-compose:1.9.3'
 
     implementation project(path: ":multifablibrary")
     //implementation 'com.github.iamageo:MultiFab:1.0.7'
