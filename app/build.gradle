@@ -4,6 +4,7 @@ plugins {
 }
 
 android {
+    namespace 'com.iamageo.multifab'
     compileSdk 33
 
     defaultConfig {
@@ -30,7 +31,7 @@ android {
         targetCompatibility JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '11'
     }
     buildFeatures {
         compose true
@@ -43,6 +44,7 @@ android {
             excludes += '/META-INF/{AL2.0,LGPL2.1}'
         }
     }
+
 }
 
 dependencies {

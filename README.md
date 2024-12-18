@@ -1,6 +1,6 @@
 <h1 align="center">Multi Float Action Button</h1><br/>
 <p align="center"> 
-➕ An efficient and beaufitul Multi Float action button library based on Twitter implemented in Jetpack Compose 🚀
+➕ An efficient and beautiful Multi Float action button library implemented in Jetpack Compose 🚀
 </p>
 
 ![banner_multifab](https://user-images.githubusercontent.com/26925002/187031958-a2aa51a4-9aee-4f6a-9066-644ddb91862c.png)
