@@ -1,5 +1,5 @@
 [versions]
-android = "8.7.3"
+android = "8.9.0"
 kotlin = "1.8.0"
 core_ktx = "1.15.0"
 compose = "1.7.8"
