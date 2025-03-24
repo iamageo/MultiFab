@@ -1,6 +1,6 @@
 [versions]
 android = "8.7.3"
-kotlin = "1.8.0"
+kotlin = "2.1.20"
 core_ktx = "1.15.0"
 compose = "1.7.8"
 lifecycle = "2.8.7"
