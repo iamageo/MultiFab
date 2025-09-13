@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace 'com.iamageo.multifab'
-    compileSdk 35
+    compileSdk libs.versions.compile.sdk.get().toInteger()
 
     defaultConfig {
         applicationId "com.iamageo.multifab"
-        minSdk 21
-        targetSdk 35
+        minSdk libs.versions.min.sdk.get().toInteger()
+        targetSdk libs.versions.target.sdk.get().toInteger()
         versionCode 1
         versionName "1.0"
 
@@ -28,17 +28,17 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.toVersion(libs.versions.java.get())
+        targetCompatibility JavaVersion.toVersion(libs.versions.java.get())
     }
     kotlinOptions {
-        jvmTarget = '11'
+        jvmTarget = libs.versions.jvm.get()
     }
     buildFeatures {
         compose true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion  "1.4.0"
+        kotlinCompilerExtensionVersion  libs.versions.kotlin.compile.get()
     }
     packagingOptions {
         resources {
