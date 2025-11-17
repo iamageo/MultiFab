@@ -1,5 +1,5 @@
 [versions]
-android = "8.13.0"
+android = "8.13.1"
 compile-sdk = "36"
 min-sdk = "21"
 target-sdk = "36"
