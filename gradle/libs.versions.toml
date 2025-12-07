@@ -1,6 +1,7 @@
 [versions]
 android = "8.13.1"
 compile-sdk = "36"
+kotlin-test = "2.2.21"
 min-sdk = "23"
 target-sdk = "36"
 kotlin-compile = "1.4.0"
@@ -10,6 +11,7 @@ kotlin = "2.2.21"
 core_ktx = "1.17.0"
 compose = "1.10.0"
 lifecycle = "2.10.0"
+junit = "4.13.2"
 activity_compose = "1.12.1"
 
 [plugins]
@@ -26,3 +28,5 @@ androidx-compose-material = { group = "androidx.compose.material", name = "mater
 androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling-preview", version.ref = "compose" }
 androidx-lifecycle-runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activity_compose" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin-test" }
