@@ -1,6 +1,7 @@
 package com.iamageo.multifab
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Column
@@ -46,7 +47,7 @@ class MainActivity : ComponentActivity() {
                                     labelColor = Color.White
                                 ),
                             ),
-                            onFabItemClicked = { println(it) },
+                            onFabItemClicked = { item -> Toast.makeText(this, item.label, Toast.LENGTH_SHORT).show() },
                             fabTitle = "MultiFloatActionButton",
                             showFabTitle = false
                         )
