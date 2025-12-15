@@ -1,5 +1,5 @@
 [versions]
-android = "8.13.1"
+android = "8.13.2"
 compile-sdk = "36"
 kotlin-test = "2.2.21"
 min-sdk = "23"
