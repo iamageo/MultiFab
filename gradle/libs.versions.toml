@@ -1,7 +1,7 @@
 [versions]
 android = "8.13.1"
 compile-sdk = "36"
-kotlin-test = "2.2.21"
+kotlin-test = "2.3.0"
 min-sdk = "23"
 target-sdk = "36"
 kotlin-compile = "1.4.0"
